@@ -302,6 +302,98 @@
     }
     .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
     .darkBtn{background:#111827;color:#fff}
+    /* ===== MOBILE FIX ===== */
+@media (max-width: 600px){
+
+  .wrap{
+    padding:14px;
+  }
+
+  .hero{
+    padding:18px;
+    border-radius:22px;
+  }
+
+  .toprow{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  .badge, .mini{
+    font-size:13px;
+    padding:6px 10px;
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .bigLine{
+    font-size:18px;
+  }
+  .bigLine span{
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  h1{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .sub{
+    font-size:14px;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+    gap:12px;
+  }
+
+  .card{
+    padding:14px;
+  }
+
+  /* reason chips fix */
+  .chips{
+    gap:6px;
+  }
+
+  .chip{
+    font-size:12px;
+    padding:6px 9px;
+  }
+
+  /* buttons stack */
+  .ctaRow{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  button{
+    width:100%;
+  }
+
+  /* NO arena mobile */
+  .noArena{
+    width:100%;
+    height:86px;
+  }
+
+  .hint{
+    font-size:12px;
+  }
+
+  /* loading card */
+  .loadCard{
+    padding:16px;
+    border-radius:22px;
+  }
+}
+
   </style>
 </head>
 
@@ -591,6 +683,7 @@
   </script>
 </body>
 </html>
+
 
 
 
